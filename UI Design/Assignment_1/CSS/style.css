@@ -1,0 +1,363 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #FF0000;
+}
+
+.logo{
+    width: 80px;
+    height: 30px;
+    margin-left: 25px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.manu-item{
+    list-style-type: none;
+    margin-left: 12.3px;
+    margin-right: 12.3px;
+}
+
+.menus{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    margin-right: 109px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    /* margin: 0px 109px 23px 0px; */
+    
+}
+
+.menus li{
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+button {
+    padding: 7.5px 32px 10.5px 32px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.container{
+    width: 100%;
+    /* height: 506px; */
+    background-color: #FFD600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    width: 883px;
+    height: 365px;
+    background-color: white;
+    margin-top: 71px;
+    margin-bottom: 70px;
+    flex-direction: column;
+    max-width: 100%;
+    
+    
+}
+
+table tr td img {
+    margin: auto;
+}
+
+.manu-item button{
+    color: #FF0000;
+}
+
+.table-title{
+    text-align: center;
+}
+
+.table-heading, .table-data2{
+    background-color: #24381C0F;
+    
+}
+
+table{
+    border-collapse: collapse;
+    /* text-align: center; */
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+table th{
+    padding: 15.5px 9.5px 15.5px 9.5px;
+    text-align: left;
+    
+}
+.table-data1{
+    background-color: white;
+    
+}
+table td{
+    padding: 9.5px;
+}
+
+/* .person-section{
+    width: 912px;
+    height: 409px;
+    background-color: #EEEEEE;
+    align-self: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person-title{
+    margin-top: 68px;
+}
+
+.person-list{
+    display: flex;
+    margin-left: 0;
+    padding-left: 15px;
+    
+}
+
+#plist{
+    list-style-type: none;
+    width: 25%;
+}
+
+.card{
+    width: 202px;
+    height: 62px;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-list{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-img{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+} */
+
+
+.person-section {
+    width: 100%;
+    max-width: 912px;
+    height: auto;
+    background-color: #EEEEEE;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.person-title {
+    margin-top: 20px;
+    font-size: 1.5em; /* Adjust font size for responsiveness */
+}
+
+.person-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center;
+    margin-left: 0;
+    padding-left: 0;
+    gap: 15px; /* Adds spacing between cards */
+}
+
+#plist {
+    list-style-type: none;
+    flex: 1 1 calc(25% - 15px); /* Adjust width based on the number of items per row and gap */
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100%; /* Make the card width responsive */
+    max-width: 202px; /* Set a maximum width */
+    height: auto; /* Allow height to adjust based on content */
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Adjust margin for smaller screens */
+}
+
+
+
+.footer{
+    background-color: #FF0000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer span{
+    margin-right: 111px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+/* Media query */
+@media (max-width: 768px) { 
+    /* body{
+        text-size-adjust: 50px;
+    } */
+
+    /* .container{
+        margin-left: 0px;
+        padding-left: 0px;
+    } */
+
+    .content{
+        width: 600px;
+        height: 450px;
+        max-width: 100%;
+       
+    }
+    .container .content{
+        font-size: small;
+    }
+
+    .container .content table td {
+        margin-right: 0px;
+        margin-left: 5px;
+        padding-right: 0px;
+        padding-left: 5px;
+    }
+
+    .menus{
+        margin-right: 10px;
+    }
+
+    .footer .footer-text{
+        margin-right: 20px;
+    }
+    
+
+    /* .person-section{
+        width: 600px;
+        height: 309px;
+        font-size: small;
+        max-width: 100%;
+    }
+
+    .card{
+        width: 125px;
+        height: 42px;
+        margin-right: 10px;
+        padding-right: 10px;
+        border-radius: 4px;
+    }
+
+     .user-img{
+        padding-left: 15px;
+    }
+
+    .person-list{
+        padding-left: 6px;
+    }
+
+    .person-title{
+        margin-top: 48px;
+    } */
+
+
+    .person-title {
+        font-size: 1.2em; /* Adjust font size for medium screens */
+    }
+    
+    #plist {
+        flex: 1 1 calc(50% - 15px); /* Two items per row */
+    }
+
+
+    .menus li{
+        margin-top: 13px;
+        margin-bottom: 13px;
+    }
+
+    footer span{
+        margin-right: 111px;
+        margin-top: 13px;
+        margin-bottom: 13px;
+    }
+    
+ }
+
+ @media (max-width: 390px) {
+
+    .content{
+        width: 320px;
+        /* height: 450px; */
+       max-width: 100%;
+    }
+
+    table{
+        overflow-y:scroll;
+        height:500px;
+        display:block;
+        width: 300px;
+     }
+
+     .person-title {
+        font-size: 1em; /* Adjust font size for small screens */
+    }
+    
+    #plist {
+        flex: 1 1 100%; /* Full width items on small screens */
+    }
+    
+    .user-img {
+        width: 25px; /* Adjust image size for small screens */
+        height: 25px;
+    }
+ } 
+
+
+ 

@@ -1,0 +1,127 @@
+.navigation-menu{
+  background-color: #445CD5;
+}
+
+.logo{
+   width: 200px;
+  /* padding-top: 6px;
+  padding-bottom: 6px; */
+   /* height: 45px; */
+}
+
+.contactbtn{
+  border-radius: 30px;
+}
+
+.nav-link{
+  margin-right: 1rem;
+}
+
+.contact-btn{
+  margin-right: 0rem;
+  margin-left: 3rem;
+}
+
+.banner{
+  background-image: url("/public/banner.png");
+  background-color: #cccccc;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center;  
+  width: 100%;
+  height: 700px;
+
+}
+
+.bannermobile{
+  max-width: 100%;
+}
+
+.banner-section{
+  padding-top: 20px;
+}
+
+.downloadbtn{
+width: 25px;
+height: 25px;
+}
+
+.arrowright{
+  width: 25px;
+  height: 25px;
+}
+
+
+
+.homemenu{
+  text-decoration: underline;
+  text-decoration-thickness: 3px; 
+}
+
+/* services section */
+.services{
+  background-color: #F9F9FF;
+}
+
+.textlight{
+  color: #707070;
+}
+
+.services-img{
+  width: 10rem;
+}
+
+.bigImg{
+  width: 25rem;
+}
+
+.getmoreBtn{
+  /* margin-left: 6rem; */
+  color: #707070;
+}
+
+.arrowi{
+  width: 2rem;
+}
+
+.numberText{
+  color: #1453FF;
+  font-size: 1.5rem;
+}
+.projectP{
+  color: #1453FF;
+}
+
+.i-m{
+  width: 3rem;
+}
+
+.project-c{
+  border-radius: 50px 0px 50px 0px;
+}
+
+.bigImg1{
+  width: 15rem;
+}
+
+.footer{
+  background-color: #EBEBF8;
+}
+
+.unstyled{
+  list-style-type: none;
+}
+
+.textGray{
+  color: #8A8A8A;
+}
+
+.bottom-text{
+  color: #677294;
+}
+
+
+
+
+
+

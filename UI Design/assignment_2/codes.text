@@ -1,0 +1,175 @@
+import React, { useState , useEffect} from 'react';
+
+// function Car({ car, onClick }) {
+//   return (
+//     <li onClick={() => onClick(car)}>
+//       {car.brand}
+//     </li>
+//   );
+// }
+
+// function CarDetails({ car }) {
+//   return (
+//     <div>
+//       <h2>Car Details</h2>
+//       <ul>
+//         <li>Model Name: {car.name}</li>
+//         <li>Price: ${car.price}</li>
+//         <li>Details: {car.details}</li>
+//       </ul>
+//     </div>
+//   );
+// }
+
+// export default function Garage() {
+//   const [selectedCar, setSelectedCar] = useState(null);
+
+//   const cars = [
+//     { id: 1, brand: 'Ford', name: 'Mustang', price: 4000, details: 'It is a nice car' },
+//     { id: 2, brand: 'BMW', name: 'Q3S', price: 89000, details: 'It is a luxury car' },
+//     { id: 3, brand: 'Audi', name: 'ZS900', price: 3000, details: 'It is a sporty car' },
+//     { id: 4, brand: 'Mahindra', name: 'Thar', price: 2000, details: 'It is an off-road vehicle' }
+//   ];
+
+//   return (
+//     <>
+//       <h1>Cars In Garage</h1>
+//       <ul>
+//         {cars.map((car) => (
+//           <Car key={car.id} car={car} onClick={setSelectedCar} />
+//         ))}
+//       </ul>
+//       {selectedCar && <CarDetails car={selectedCar} />}
+//     </>
+//   );
+// }
+
+// export default function MyForm() {
+//   const [name, setName] = useState("");
+
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     alert(`The name you entered was: ${name}`);
+//   }
+
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <label>Enter your name:
+//         <input 
+//           type="text" 
+//           value={name}
+//           onChange={(e) => setName(e.target.value)}
+//         />
+//       </label>
+//       <input type="submit" />
+//     </form>
+//   )
+// }
+
+// export default function Form  () {
+//     const [name ,setName] = useState("");
+
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     alert(`The name you entered was: ${name}`);
+//   }
+
+
+//     return(
+//         <form onSubmit={handleSubmit}>
+//             <label> Enter Your Name
+//             <input type="text" 
+//                 value={name} 
+//                 onChange = {(e) => setName(e.target.value)} />
+//             </label>
+//         <input type="submit" />
+//         </form>
+//     )
+// }
+
+// export default function ColorSet(){
+//     const[color, setColor] = useState("red");
+//     return(
+//         <>
+//             <h1>My feveret color is {color}</h1>
+//             <button
+//                 type = "button"
+//                 onClick={ ()=> setColor("Blue")} > Blue
+//             </button>
+//             <button
+//                 type = "button"
+//                 onClick={ ()=> setColor("Red")} > Red
+//             </button>
+//         </>
+//     )
+// }
+
+//useEffect
+// export default function Timmer() {
+//     const[count, setCount] = useState(0);
+
+//     useEffect(()=>{
+//         setTimeout(()=>{
+//             setCount((count)=>count + 1);
+//         },1000)
+//     },[])
+//     return(
+//         <h1>Timmer:{count}</h1>
+
+//     )
+// }
+
+// import React ,{ useState , useEffect}from 'react';
+
+export default function App(props) {
+       const[password, setPassword]= useState("");
+       const[userName, setUserName] = useState("");
+
+       const[errorPassword, setErrorPassword] = useState("");
+       const[errorUsername, setErrorUsername] = useState("");
+
+       useEffect(()=>{
+        if(password && !password.includes("@")){
+          setErrorPassword("Password Must contains @");
+        }else{
+          setErrorPassword("")
+        }
+
+        if(userName && !userName.includes("@")){
+          setErrorUsername("Username Must contains @");
+        }else{
+          setErrorUsername("")
+        }
+       },[userName,password])
+
+       function handlePassword (e){
+        setPassword(e.target.value);
+       }
+        function handleUsername (e){
+        setUserName(e.target.value);
+       }
+
+       return(
+        <div>
+            <label>Username: </label>
+            <input 
+                type="text"
+                onChange={handleUsername}
+                value={userName}
+          />{errorUsername} <br></br>
+            
+          <label>Password: </label>
+              <input type="text"
+              onChange={handlePassword}
+              value={password}
+                 
+          />
+             {errorPassword}
+            
+        </div>
+       )
+}
+
+
+
+
